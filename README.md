@@ -5,8 +5,12 @@
 TODO:
 
 - [ ] receive events
-- [ ] receive commands
-- [ ] respond to commands
+- [ ] commands
+  - [x] receive
+  - [x] respond
+  - [ ] Handle 3 sec timeout
+  - [ ] Async response with `response_url`
+  - [ ] Handle errors
 - [ ] authenticated web client
 
 ```js

@@ -1,0 +1,33 @@
+{
+  "name": "@probot/slack-adapter",
+  "version": "1.0.0",
+  "description": "A Probot adapter for Slack",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "jest && standard"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/probot/slack-adapter.git"
+  },
+  "author": "Brandon Keepers <bkeepers@github.com>",
+  "license": "ISC",
+  "homepage": "https://github.com/probot/slack-adapter",
+  "devDependencies": {
+    "@probot/commands": "../probot-commands",
+    "jest": "^21.2.1",
+    "standard": "^10.0.2",
+    "supertest": "^3.0.0"
+  },
+  "peerDependencies": {
+    "@probot/commands": "*"
+  },
+  "standard": {
+    "env": [
+      "jest"
+    ]
+  },
+  "dependencies": {
+    "body-parser": "^1.18.2"
+  }
+}
