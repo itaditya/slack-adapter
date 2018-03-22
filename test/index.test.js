@@ -49,6 +49,7 @@ describe('commands', () => {
     expect(action).toHaveBeenCalledWith(expect.objectContaining({
       name: 'test',
       args: ['hello', 'world'],
+      url: expect.stringMatching(/^http:\/\/127\.0\.0\.1:\d+\/slack\/command/),
       context: expect.objectContaining({team_id: 'T0001'})
     }), expect.any(Function))
   })
@@ -71,7 +72,7 @@ describe('commands', () => {
       .expect(200, '"responded"')
   })
 
-  test.only('responds with 200 before timeout', async (done) => {
+  test('responds with 200 before timeout', async (done) => {
     robot.commands.register({
       name: 'delay',
       action (command) {
